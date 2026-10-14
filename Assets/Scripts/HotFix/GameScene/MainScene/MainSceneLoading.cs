@@ -1,8 +1,10 @@
-﻿using static FrameUtility;
-using static GBH;
+﻿using static LT;
 
 public class MainSceneLoading : SceneProcedure
 {
-	protected override void onInit(SceneProcedure lastProcedure) { }
+	protected override void onInit(SceneProcedure lastProcedure)
+	{
+		LOAD<UIMain>();
+	}
 	protected override void onExit(SceneProcedure nextProcedure) { }
 }

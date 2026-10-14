@@ -5,7 +5,7 @@ public class GameEntry : GameEntryBase
 	{
 		base.Awake();
 		Game framework = new();
-		framework.init();
 		setFrameworkAOT(framework);
+		framework.init();
 	}
 }

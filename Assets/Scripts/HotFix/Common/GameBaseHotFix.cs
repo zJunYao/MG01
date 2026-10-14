@@ -6,6 +6,7 @@ public partial class GBH
 	// FrameSystem
 	// 需要添加auto generate LayoutScript start和auto generate LayoutScript end才会自动生成代码
 	// auto generate LayoutScript start
+	public static UIMain mUIMain;
 	// auto generate LayoutScript end
 	
 	// auto generate Excel start

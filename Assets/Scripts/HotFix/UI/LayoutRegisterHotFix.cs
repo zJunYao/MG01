@@ -6,6 +6,7 @@ public class LayoutRegisterHotFix
 	public static void registeAll()
 	{
 		// auto generate start
+		registeLayout<UIMain>(script =>							mUIMain = script);
 		// auto generate end
 	}
 }
