@@ -10,6 +10,8 @@ namespace MG01.Test
         public Texture2D backgroundTexture;
         public AnimationClip[] clips;
         public string[] labels;
+        [Tooltip("启用后每帧恢复主角的参考图站位；关闭时可直接在 Scene 中移动主角并保存场景。")]
+        public bool lockToViewport = false;
         private int selected;
         private bool paused;
         private bool repeat = true;
@@ -20,10 +22,12 @@ namespace MG01.Test
         private SpriteRenderer backgroundRenderer;
         private Sprite backgroundSprite;
         private SpriteRenderer heroRenderer;
+        private MonsterPreview monsters;
 
         private void Start()
         {
             chineseFont = Font.CreateDynamicFontFromOSFont("Microsoft YaHei", 16);
+            monsters = GetComponent<MonsterPreview>();
             if (hero) heroRenderer = hero.GetComponent<SpriteRenderer>();
             if (backgroundTexture)
             {
@@ -49,7 +53,7 @@ namespace MG01.Test
                 backgroundRenderer.transform.localScale = Vector3.one * scale;
                 backgroundRenderer.transform.position = previewCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 20f));
             }
-            if (heroRenderer)
+            if (lockToViewport && heroRenderer)
             {
                 // 按参考图红框定位到左下方道路，并计入精灵底部的透明留白。
                 Vector3 foot = previewCamera.ViewportToWorldPoint(new Vector3(0.25f, 0.14f,
@@ -96,11 +100,19 @@ namespace MG01.Test
             Font previousFont = GUI.skin.font;
             if (chineseFont) GUI.skin.font = chineseFont;
             float panelWidth = Mathf.Min(290f, Screen.width * 0.36f);
-            GUILayout.BeginArea(new Rect(Screen.width - panelWidth - 16, 16, panelWidth,
+            float panelX = monsters ? 16f : Screen.width - panelWidth - 16;
+            GUILayout.BeginArea(new Rect(panelX, 16, panelWidth,
                 Mathf.Min(Screen.height - 32, 760)), GUI.skin.box);
             scroll = GUILayout.BeginScrollView(scroll);
-            GUILayout.Label("主角 · 模型 / 动画 / 特效观察");
-            GUILayout.Label("右下方向 · 待机 / 呼吸 / 魔法攻击");
+            GUILayout.Label(monsters ? "角色 · 模型 / 动画 / 特效观察" : "主角 · 模型 / 动画 / 特效观察");
+            if (monsters) monsters.DrawActorSelector();
+            if (monsters && monsters.SelectedActor >= 0)
+            {
+                monsters.DrawSelectedControls();
+            }
+            else
+            {
+             GUILayout.Label("右下方向 · 待机 / 呼吸 / 魔法攻击 / 受击");
             for (int i = 0; i < clips.Length; i++)
                 if (GUILayout.Toggle(selected == i, labels[i], GUI.skin.button) && selected != i) Select(i);
             paused = GUILayout.Toggle(paused, "暂停播放");
@@ -116,6 +128,7 @@ namespace MG01.Test
             if (GUILayout.Button("下一帧")) Step(1);
             if (GUILayout.Button("重播")) { time = 0f; paused = false; Sample(); }
             GUILayout.EndHorizontal();
+            }
             if (previewCamera)
             {
                 GUILayout.Label("镜头缩放");
@@ -126,7 +139,7 @@ namespace MG01.Test
                     previewCamera.backgroundColor = previewCamera.backgroundColor.r < 0.3f
                         ? new Color(0.72f, 0.75f, 0.78f) : new Color(0.08f, 0.11f, 0.16f);
             }
-            GUILayout.Label("魔法光效已包含在原始攻击帧中。\n当前仅保留右下方向动画。", GUILayout.Height(48));
+            GUILayout.Label("特效已包含在原始攻击帧中。\n主角朝右下，怪物朝左下。", GUILayout.Height(48));
             GUILayout.EndScrollView();
             GUILayout.EndArea();
             GUI.skin.font = previousFont;
