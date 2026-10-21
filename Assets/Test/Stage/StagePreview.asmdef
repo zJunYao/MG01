@@ -1,0 +1,5 @@
+{
+    "name": "StagePreview",
+    "references": ["Game", "UnityEngine.UI"],
+    "autoReferenced": true
+}

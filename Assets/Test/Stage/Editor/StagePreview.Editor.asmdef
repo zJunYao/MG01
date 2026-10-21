@@ -1,0 +1,6 @@
+{
+    "name": "StagePreview.Editor",
+    "references": ["StagePreview", "Game", "UnityEngine.UI"],
+    "includePlatforms": ["Editor"],
+    "autoReferenced": true
+}

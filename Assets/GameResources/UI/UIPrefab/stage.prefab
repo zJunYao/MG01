@@ -711,6 +711,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5519542628061000867}
+  - {fileID: 909999999999969028}
   - {fileID: 7653063761321145691}
   - {fileID: 2191811221880911619}
   - {fileID: 7498922822261375492}
@@ -4710,3 +4711,49 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &910000000000000001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7742530579178643375}
+    m_Modifications:
+    - target: {fileID: 100100, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+      propertyPath: m_Name
+      value: ModelViewRoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 100101, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100101, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100101, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100101, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100101, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100101, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+--- !u!224 &909999999999969028 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 100101, guid: 66f988de18c14379afcf34cd2947b1b5, type: 3}
+  m_PrefabInstance: {fileID: 910000000000000001}
+  m_PrefabAsset: {fileID: 0}
