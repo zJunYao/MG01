@@ -1,0 +1,2 @@
+id,key,double_click_seconds,drag_threshold,reference_width,reference_height,rotation_anchor
+1,default,0.25,10,1920,1080,top_left

@@ -28,6 +28,9 @@ public class UIMain : LayoutScript
 	public override void init()
 	{
 		base.init();
+		var newGameObject = mbtn_new.getGameObject();
+		var newGameButton = newGameObject.GetComponent<UnityEngine.UI.Button>() ?? newGameObject.AddComponent<UnityEngine.UI.Button>();
+		newGameButton.onClick.AddListener(MG01.Demo.DemoModule.Enter);
 		// auto generate init start
 		// auto generate init end
 	}

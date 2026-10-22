@@ -1,0 +1,8 @@
+{
+    "name": "Demo.EditModeTests",
+    "rootNamespace": "MG01.Demo.Tests",
+    "references": ["Demo.Core", "Demo.Editor", "Demo.Views", "HotFix", "Frame_HotFix", "Frame_Base"],
+    "includePlatforms": ["Editor"],
+    "optionalUnityReferences": ["TestAssemblies"],
+    "autoReferenced": false
+}

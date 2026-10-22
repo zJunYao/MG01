@@ -1,0 +1,6 @@
+id,key,name,category,width,height,rotatable,effect_key,icon_key,detail_template
+1,lightning_staff,雷电法杖,attack,1,3,true,staff_damage,staff_icon,对主要目标造成{value}点雷电伤害
+2,thunder_hat,雷电帽,attack,2,2,true,hat_damage,hat_icon,召唤雷云造成{value}点伤害
+3,lightning_runestone,雷电符石,passive,1,1,true,adjacent_damage,runestone_icon,共边相邻的攻击道具各增加{value}点伤害
+4,magic_bubble,魔法泡泡,defense,2,2,true,bubble_shield,bubble_icon,获得{value}点护盾；下次备战清除剩余护盾
+5,healing_potion,治疗药水,consumable,1,2,true,potion_heal,potion_icon,未满生命时恢复最多{value}点生命并消耗

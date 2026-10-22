@@ -1,0 +1,5 @@
+id,key,name,max_health,resource_key,portrait_key,behavior_group
+1,hero,主角,30,hero_model,hero_portrait,
+2,goblin_warrior,哥布林战士,14,warrior_model,warrior_portrait,warrior
+3,goblin_thief,哥布林盗贼,18,thief_model,thief_portrait,thief
+4,goblin_chief,哥布林首领,28,chief_model,chief_portrait,chief

@@ -1,0 +1,26 @@
+{
+  "frame_size": [
+    229,
+    687
+  ],
+  "grid": [
+    5,
+    2
+  ],
+  "order": "left to right, then top to bottom",
+  "active_frame_count": 9,
+  "active_duration_ms": 680,
+  "frame_durations_ms": [
+    50,
+    50,
+    60,
+    90,
+    90,
+    70,
+    70,
+    90,
+    110
+  ],
+  "preview_blank_interval_ms": 700,
+  "notes": "Original RGBA pixels retained in frames 1-9. Frame 10 is fully transparent."
+}

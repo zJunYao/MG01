@@ -1,0 +1,2 @@
+id,key,version,columns,rows,reserve_capacity,reserve_columns,hero_key,initial_health,initial_shield,sort_policy,default_target,scene_binding
+1,demo_battle,0.3.3,7,5,8,4,hero,18,0,position_column_row,warrior,hero_preview

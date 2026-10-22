@@ -1,0 +1,5 @@
+id,key,actor_key,animation,speed,flash_duration,flash_interval
+1,hero_hit,hero,Hit_south-east,3,0.6,0.08
+2,warrior_hit,goblin_warrior,,1,0.6,0.08
+3,thief_hit,goblin_thief,,1,0.6,0.08
+4,chief_hit,goblin_chief,,1,0.6,0.08

@@ -1,0 +1,33 @@
+{
+  "active_frame_count": 23,
+  "active_duration_ms": 1720,
+  "frame_durations_ms": [
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    70,
+    70,
+    70,
+    70,
+    70,
+    70,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    80,
+    80,
+    80,
+    80,
+    80
+  ],
+  "frame_width": 181,
+  "frame_height": 362,
+  "source_columns": 6,
+  "source_rows": 4
+}

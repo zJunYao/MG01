@@ -1,0 +1,6 @@
+id,key,kind,value,condition,target,consume,presentation_key
+1,staff_damage,damage,6,always,enemy,false,staff_cast
+2,hat_damage,damage,10,always,enemy,false,hat_cast
+3,adjacent_damage,adjacent_bonus,2,shared_edge,adjacent_attack,false,
+4,bubble_shield,shield,9,always,self,false,bubble_cast
+5,potion_heal,heal,10,missing_health,self,true,potion_cast

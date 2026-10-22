@@ -1,0 +1,38 @@
+{
+  "source_size": [
+    1774,
+    887
+  ],
+  "frame_size": [
+    444,
+    222
+  ],
+  "columns": 4,
+  "rows": 4,
+  "frame_count": 16,
+  "fps": 14,
+  "flight_frames": [
+    1,
+    8
+  ],
+  "dissolve_frames": [
+    9,
+    16
+  ],
+  "source_sha256": "d736984ad6187d1dccc0ed8babdaf53185584c8b7a063b0317d2f8c5779f761b",
+  "slice_x": [
+    0,
+    444,
+    887,
+    1330,
+    1774
+  ],
+  "slice_y": [
+    0,
+    222,
+    444,
+    665,
+    887
+  ],
+  "alpha_cleanup": "Only alpha values 0 or 1; terminal frame fully cleared"
+}

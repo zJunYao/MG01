@@ -1,0 +1,9 @@
+<linker>
+  <!-- 表行由框架按类型创建；保留热更适配及跨程序集配置查询入口。 -->
+  <assembly fullname="HotFix">
+    <type fullname="MG01.Demo.Infrastructure.DemoExcelTable" preserve="all" />
+    <type fullname="MG01.Demo.Infrastructure.Demo*Row" preserve="all" />
+    <type fullname="MG01.Demo.DemoConfigurationSystem" preserve="all" />
+  </assembly>
+  <assembly fullname="Demo.Core" preserve="all" />
+</linker>

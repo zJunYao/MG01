@@ -1,0 +1,6 @@
+{
+    "name": "Demo.Views",
+    "rootNamespace": "MG01.Demo.Views",
+    "references": ["Demo.Core", "Game", "UnityEngine.UI"],
+    "autoReferenced": false
+}

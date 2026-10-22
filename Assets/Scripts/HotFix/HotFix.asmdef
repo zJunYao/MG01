@@ -6,7 +6,10 @@
         "Frame_HotFix",
         "Game",
         "Frame_Base",
-        "Obfuz.Runtime"
+        "Obfuz.Runtime",
+        "Demo.Core",
+        "Demo.Views",
+        "UnityEngine.UI"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

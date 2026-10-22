@@ -1,0 +1,5 @@
+id,key,battle_key,actor_key,action_order,target_order,position_key
+1,hero,demo_battle,hero,1,0,hero
+2,warrior,demo_battle,goblin_warrior,2,1,warrior
+3,thief,demo_battle,goblin_thief,3,2,thief
+4,chief,demo_battle,goblin_chief,4,3,chief

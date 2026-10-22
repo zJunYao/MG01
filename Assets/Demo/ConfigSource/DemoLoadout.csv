@@ -1,0 +1,6 @@
+id,key,battle_key,item_key,container,column,row,rotation,slot
+1,staff_01,demo_battle,lightning_staff,backpack,2,1,0,0
+2,hat_01,demo_battle,thunder_hat,backpack,4,2,0,0
+3,bubble_01,demo_battle,magic_bubble,backpack,6,1,0,0
+4,runestone_01,demo_battle,lightning_runestone,reserve,0,0,0,1
+5,potion_01,demo_battle,healing_potion,reserve,0,0,0,2

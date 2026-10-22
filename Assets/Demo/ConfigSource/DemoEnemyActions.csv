@@ -1,0 +1,5 @@
+id,key,group,sequence,kind,hit_count,damage,presentation_key
+1,warrior_attack,warrior,1,attack,2,3,warrior_attack
+2,thief_attack,thief,1,attack,1,4,thief_attack
+3,chief_charge,chief,1,charge,0,0,chief_charge
+4,chief_attack,chief,2,attack,1,12,chief_attack

@@ -1,0 +1,7 @@
+{
+    "name": "Demo.PlayModeTests",
+    "rootNamespace": "MG01.Demo.Tests",
+    "references": ["Demo.Core", "Demo.Views", "HotFix", "Frame_HotFix", "Frame_Base", "UnityEngine.UI"],
+    "optionalUnityReferences": ["TestAssemblies"],
+    "autoReferenced": false
+}

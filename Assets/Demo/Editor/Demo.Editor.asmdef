@@ -1,0 +1,7 @@
+{
+    "name": "Demo.Editor",
+    "rootNamespace": "MG01.Demo.Editor",
+    "references": ["Demo.Core", "Demo.Views", "HotFix", "Frame_HotFix", "Frame_Base", "Game"],
+    "includePlatforms": ["Editor"],
+    "autoReferenced": false
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Demo.Core",
+    "rootNamespace": "MG01.Demo",
+    "references": [],
+    "autoReferenced": false,
+    "noEngineReferences": true
+}
